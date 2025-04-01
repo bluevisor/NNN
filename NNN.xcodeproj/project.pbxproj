@@ -6,8 +6,13 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		9697866E2D9C111C001F8C5B /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9697866D2D9C111C001F8C5B /* Metal.framework */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		969786542D9C0F71001F8C5B /* NNN.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NNN.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9697866D2D9C111C001F8C5B /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -23,6 +28,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9697866E2D9C111C001F8C5B /* Metal.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -33,6 +39,7 @@
 			isa = PBXGroup;
 			children = (
 				969786562D9C0F71001F8C5B /* NNN */,
+				9697866C2D9C111C001F8C5B /* Frameworks */,
 				969786552D9C0F71001F8C5B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +50,14 @@
 				969786542D9C0F71001F8C5B /* NNN.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		9697866C2D9C111C001F8C5B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9697866D2D9C111C001F8C5B /* Metal.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,6 +277,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 13.5;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.bucaa.NNN;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -289,6 +305,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 13.5;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.bucaa.NNN;
 				PRODUCT_NAME = "$(TARGET_NAME)";
