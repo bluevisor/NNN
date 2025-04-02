@@ -21,7 +21,7 @@ NNN is a simple macOS application demonstrating real-time handwritten digit reco
 1.  **Capture:** The `DrawingView` captures the user's strokes.
 2.  **Snapshot:** When the drawing changes, a snapshot of the view is taken.
 3.  **Resize:** The snapshot is resized to 28x28 pixels, the input size required by the MNIST model.
-4.  **Grayscale Conversion:** The resized image is converted into a grayscale pixel buffer. The colors are likely inverted during this process to match the MNIST training data format (white digit on black background).
+4.  **Grayscale Conversion:** The resized image is converted into a grayscale pixel buffer. The colors are inverted during this process to match the MNIST training data format (white digit on black background).
 5.  **Predict:** The `MNISTClassifier` Core ML model takes the 28x28 grayscale pixel buffer as input and outputs a prediction (the recognized digit).
 6.  **Display:** The application UI updates to show the resized preview, the grayscale preview, and the final predicted digit.
 
@@ -48,7 +48,6 @@ The application uses a Core ML model (`MNISTClassifier.mlpackage`) trained for h
 ## Potential Improvements
 
 *   Improve drawing smoothness and stroke handling.
-*   Add a "Clear" button to easily erase the canvas.
 *   Display prediction confidence scores alongside the predicted digit.
 *   Allow loading different Core ML models.
 *   Experiment with different preprocessing techniques.
