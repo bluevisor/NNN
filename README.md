@@ -1,9 +1,9 @@
-# NNN - Number Neural Network
+# NNN (Number Neural Network)
 
 NNN is a simple macOS application demonstrating real-time handwritten digit recognition using a Core ML model trained on the MNIST dataset. Users can draw a digit (0-9) in the provided canvas, and the application will predict the digit in real-time.
 
-![Screenshot Placeholder](placeholder.png) 
-*(Suggestion: Replace placeholder.png with an actual screenshot of the running application)*
+<img width="1012" alt="image" src="https://github.com/user-attachments/assets/90b9fe95-0fc0-4f18-9edc-c688c976b208" />
+
 
 ## Features
 
@@ -34,7 +34,7 @@ NNN is a simple macOS application demonstrating real-time handwritten digit reco
 
 1.  Clone this repository:
     ```bash
-    git clone <your-repository-url>
+    git clone https://github.com/bluevisor/NNN/
     cd NNN
     ```
 2.  Open the `NNN.xcodeproj` file in Xcode.
